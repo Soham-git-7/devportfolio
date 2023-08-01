@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soham - Dev Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(40, 125, 210);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 50px;
+            background-color: darkblue;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: red;
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+        }
+
+        main hr {
+            border: 0;
+            background: darkblue;
+            height: 2px;
+            margin: 60px 84px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .firstSection .leftSection {
+            /* background-color: red; */
+            font-size: 3rem;
+        }
+
+        .firstSection .leftSection .btn {
+            padding: 12px;
+            background: darkblue;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .firstSection .leftSection .buttons{
+            padding: 30px 0;
+        }
+
+        .firstSection .rightSection {
+            /* background-color: red; */
+        }
+
+        .firstSection .rightSection img {
+            width: 90%;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .Horizontal {
+            background: darkblue;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            position: relative;
+            top: 40px
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 2px;
+            background: darkblue;
+            margin: 0 157px;
+        }
+
+        .purple {
+            color: red;
+        }
+
+        .text-gray {
+            color: darkblue;
+            width: 2px;
+        }
+
+        #element {
+            color: red;
+        }
+
+        .image-first {
+            width: 50px;
+            position: relative;
+            top: -45px;
+            left: -24px;
+        }
+
+        .image-second {
+            position: relative;
+            width: 35px;
+            top: -50px;
+            left: -16px;
+        }
+
+        .image-third {
+            width: 80px;
+            position: relative;
+            top: -73px;
+            left: -39px;
+        }
+
+        .image-fourth {
+            width: 50px;
+            position: relative;
+            top: -55px;
+            left: -23px;
+        }
+
+        .vertical-title1 {
+            position: relative;
+            top: 63px;
+            width: 200px;
+            left: -90px;
+        }
+
+        .vertical-desc1 {
+            position: relative;
+            top: 72px;
+            font-size: 10px;
+            width: 200px;
+            left: -89px;
+        }
+
+        .vertical-title2 {
+            position: relative;
+            top: 54px;
+            width: 200px;
+            left: -90px;
+        }
+
+
+        .vertical-desc2 {
+            position: relative;
+            top: 62px;
+            font-size: 10px;
+            width: 200px;
+            left: -89px;
+        }
+
+        .vertical-title3 {
+            position: relative;
+            top: 17px;
+            width: 200px;
+            left: -90px;
+        }
+
+        .vertical-desc3 {
+            position: relative;
+            position: relative;
+            top: 21px;
+            font-size: 10px;
+            width: 200px;
+            left: -89px;
+        }
+
+        .vertical-title4 {
+            position: relative;
+            top: 44px;
+            width: 200px;
+            left: -90px;
+        }
+
+        .vertical-desc4 {
+            position: relative;
+            top: 49px;
+            font-size: 10px;
+            width: 200px;
+            left: -89px;
+        }
+
+        footer {
+            background-color: darkblue;
+            /* height: 200px; */
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 100px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer1 {
+            width: 200px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Soham's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Soham</span>
+                <div>
+                    and I am a passionate
+                </div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <button class="btn">View Resume</button>
+                    <button class="btn">Visit LinkedIn</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="pi.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>My Journey</h1>
+
+            <div class="Horizontal">
+                <div class="vertical">
+                    <img class="image-first" src="be.png">
+                    <div class="vertical-title1">
+                        BE (E&TC) - SCOE, Pune [2015-19]
+                    </div>
+                    <div class="vertical-desc1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis nesciunt, asperiores
+                        sit odit architecto minima quas voluptatum, dolores, soluta quibusdam minus nobis?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-second" src="Coep.jpg">
+                    <div class="vertical-title2">
+                        MTech (Digital Systems) - COEP, Pune [2020-22]
+                    </div>
+                    <div class="vertical-desc2">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis nesciunt, asperiores
+                        sit odit architecto minima quas voluptatum, dolores, soluta quibusdam minus nobis?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-third" src="Wd.webp">
+                    <div class="vertical-title3">
+                        CitiusTech Healthcare Pvt Ltd [2022-23]
+                    </div>
+                    <div class="vertical-desc3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis nesciunt, asperiores
+                        sit odit architecto minima quas voluptatum, dolores, soluta quibusdam minus nobis?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-fourth" src="L.png">
+                    <div class="vertical-title4">
+                        Reputed organization
+                    </div>
+                    <div class="vertical-desc4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam perferendis nesciunt, asperiores
+                        sit odit architecto minima quas voluptatum, dolores, soluta quibusdam minus nobis?
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer1">
+                Soham's Developer Portfolio
+            </div>
+            <div class="footer2">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer3">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="footer4">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; sohamsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Angular Developer', 'UI Designer', 'Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
